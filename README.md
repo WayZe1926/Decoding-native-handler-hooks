@@ -4,6 +4,7 @@ so you need a pretty small assembly function to do this,
 1. some bit shifting magic
 
 # Code:
+
 bit_mix proc
 	sub    rsp,18h
 	mov    QWORD PTR [rsp+10h],rcx
@@ -36,6 +37,7 @@ bit_mix proc
 	add    rsp,18h
 	ret
     bit_mix endp
+
 
 2. the actual logic (you need to build this at runtime, the constants are just poc from my dump)
 # Code:
